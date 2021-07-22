@@ -1,0 +1,43 @@
+@import "./vars";
+
+// global styling
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  font-family: $poppins;
+}
+
+body {
+  background: #303030;
+}
+
+* {
+  box-sizing: border-box;
+  list-style: none;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+// global styling
+
+// continaer styles
+.container {
+  width: 98%;
+  min-height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  grid-gap: 15px;
+}
+
+@import "./dataContainer";
+@import "./dataHandler";

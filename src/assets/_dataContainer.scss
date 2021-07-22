@@ -1,0 +1,49 @@
+.data-container {
+  width: 60vw;
+  height: 70vh;
+  background: #242424;
+  overflow-y: auto;
+  border-radius: 10px;
+  .title {
+    width: 100%;
+    margin-top: 1rem;
+    padding: 0 2rem;
+    font-size: clamp(1rem, 2vw, 2rem);
+  }
+
+  ul {
+    width: 100%;
+    padding: 0 3rem;
+    li {
+      padding: 0.8rem 0;
+      position: relative;
+
+      &::after {
+        content: ">";
+        left: 0;
+        color: #5b86e5;
+        font-weight: bold;
+        display: inline-block;
+        width: 1rem;
+        position: absolute;
+        margin-left: -1rem;
+      }
+
+      a {
+        cursor: pointer;
+        transition: 0.5s all ease-out;
+
+        &:hover {
+          color: #e74c3c;
+          transition: 0.5s all ease-out;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .data-container {
+    width: 80vw;
+  }
+}

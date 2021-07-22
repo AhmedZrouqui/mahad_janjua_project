@@ -1,0 +1,52 @@
+.data-add {
+  width: 60vw;
+  height: 10vh;
+  background: #242424;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  .form-div {
+    input[type="text"] {
+      min-width: 20vw;
+      padding: 0.8rem;
+      border: 1px #a7a7a7 solid;
+      border-radius: 5px;
+      background-color: transparent;
+      outline: none;
+      color: white;
+      margin-right: 10px;
+    }
+
+    button {
+      padding: 0.8rem 2rem;
+      border: 1px #5b86e5 solid;
+      background: #5b86e5;
+      border-radius: 5px;
+      color: white;
+      cursor: pointer;
+      transition: 0.5s all ease-out;
+
+      &:hover {
+        background: hsl(221, 73%, 58%);
+        border-color: hsl(221, 73%, 58%);
+        transition: 0.5s all ease-out;
+      }
+    }
+  }
+
+  span {
+    font-size: 0.8rem;
+    position: absolute;
+    top: -18px;
+    color: #a7a7a7;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .data-add {
+    width: 80vw;
+  }
+}
